@@ -1,0 +1,173 @@
+
+// ******************** VARIABLES ***********************
+
+// ------------------- colors -----------------
+$red: #ff2c00;
+$yellow: #ffd913;
+$green: #2be404;
+$darkGrey: #333;
+$stationeryBlue: #C5FAFE;
+$pearlWhite: #FAFAFA;
+
+// ------------ heights and widths ------------
+
+// ------------------ fonts -------------------
+$pacifico: 'Pacifico', cursive;
+$dancingScript: 'Dancing Script', cursive;
+$shadows: 'Shadows Into Light', cursive;
+$Gloria: 'Gloria Hallelujah', cursive;
+$abril: 'Abril Fatface', cursive;
+$indieFlower: 'Indie Flower', cursive;
+$PTsans: 'PT Sans', sans-serif;
+$josefin: 'Josefin Sans', sans-serif;
+$questrial: 'Questrial', sans-serif;
+$signika: 'Signika', sans-serif;
+
+
+// ************** Component nested in order **************
+body {
+	background-color: $darkGrey;
+	height: 100%;
+	width: 100%;
+	#recipeBox {
+		height: 100%;
+		font-family: $signika;
+		background-color: $darkGrey;
+		color: $stationeryBlue;
+		padding: 5%;
+		.modal-container {
+			background-color: $darkGrey;
+		}
+		#MainHousing {
+			padding: none;
+			#Logo {
+				height: 25vh;
+				width: 100%;
+				overflow: visible;
+				padding: none;
+				margin: none;
+				position:relative;
+				top: 0;
+				bottom: 0;
+				overflow: visible;
+				#outerAnchor {
+					overflow: visible;
+					height: 11.25vh;
+					width: 11.25vh;
+					border: solid $red 1px;
+					background-color: $red;
+					margin:none;
+					margin-bottom: 5vh;
+					box-shadow: 2px 2px 4px $pearlWhite;
+					position:absolute;
+					left: 0vw;
+					top: 0vh;
+
+				}
+				#mainHeader {
+					overflow: visible;
+					position:absolute;
+					top: 1vh;
+					font-size: 5vh;
+					text-shadow: 1px 1px 1px $darkGrey;
+					small {
+						margin-top: 5vh;
+						font-size: 2vh;
+						color: $pearlWhite;
+					}
+				}
+			}
+			background-color: $darkGrey;
+			color: $stationeryBlue;
+			#recipeList {
+				border: none;
+				background-color: $darkGrey;
+				.recTitle,
+				.recTitle:hover,
+				.recTitle:active,
+				.recTitle:focus {
+					font-size: 200%;
+					text-decoration: 0;
+					border: 0;
+				}
+				.btn-group-padding {
+					padding: none;
+					margin: none;
+				}
+				.action {
+					font-size: 125%;
+					margin: none;
+					padding: none;
+				}
+				li {
+					font-size: 2.5vh;
+					list-style: '-';
+				}
+			}
+			.recipeList {
+				background-color: $darkGrey;
+				ul.display {
+					font-size: 2.5vh;
+					list-style-type: '-';
+				}
+			}
+		}
+	}
+}
+.recForms {
+	span {
+		padding: .25%;
+		padding-right: 2%;
+		padding-left: 2%;
+		background-color: $darkGrey;
+		color: $pearlWhite;
+		font-size: 120%;
+		border: solid $stationeryBlue .5px;
+		border-radius: 4px;
+	}
+	.syntax {
+		margin: none;
+		height: 100%;
+		width: 100%;
+		font-weight: bold;
+		text-align: center;
+		font-size: 100%;
+		color: $darkGrey;
+		background-color: $pearlWhite;
+		border: solid $darkGrey .5px;
+		border-radius: 4px;
+	}
+}
+// **************** BOOTSTRAP CLASSES *******************
+
+.modal-container {
+	.success {
+		border:solid $pearlWhite 1px;
+	}
+
+	#modal {
+		background-color: $darkGrey;
+	}
+	position: relative;
+	.closeBox {
+		padding: none;
+	}
+	#closeEdit {
+		padding: none;
+	}
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+	background-color: $darkGrey;
+	position: absolute;
+}
+.modal-content {
+	background-color: $darkGrey;
+}
+.modal-header {
+	.close {
+		color: $pearlWhite;
+	}
+	#contained-modal-title {
+		color: $pearlWhite;
+	}
+}
